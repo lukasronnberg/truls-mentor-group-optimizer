@@ -1,0 +1,122 @@
+id,name,category,participation,preferred_period,gender,year,normal_subrole,requested_with
+ON01,One Normal 01,normal,one_period,1,woman,2,international,TN001
+ON02,One Normal 02,normal,one_period,1,man,3,international,TN002
+ON03,One Normal 03,normal,one_period,1,woman,4,normal,TN003
+ON04,One Normal 04,normal,one_period,1,man,1,normal,TN004
+ON05,One Normal 05,normal,one_period,1,woman,2,normal,TN005
+ON06,One Normal 06,normal,one_period,1,man,3,event,TN006
+ON07,One Normal 07,normal,one_period,1,woman,4,normal,TN007
+ON08,One Normal 08,normal,one_period,1,man,1,normal,TN008
+ON09,One Normal 09,normal,one_period,1,woman,2,normal,TN009
+ON10,One Normal 10,normal,one_period,1,man,3,normal,TN010
+ON11,One Normal 11,normal,one_period,1,woman,4,normal,TN011
+ON12,One Normal 12,normal,one_period,1,man,1,normal,TN012
+ON13,One Normal 13,normal,one_period,1,woman,2,normal,TN013
+ON14,One Normal 14,normal,one_period,1,man,3,normal,TN014
+ON15,One Normal 15,normal,one_period,1,woman,4,normal,TN015
+ON16,One Normal 16,normal,one_period,1,man,1,normal,TN016
+ON17,One Normal 17,normal,one_period,1,woman,2,event,TN017
+ON18,One Normal 18,normal,one_period,1,man,3,normal,TN018
+ON19,One Normal 19,normal,one_period,1,woman,4,normal,TN019
+ON20,One Normal 20,normal,one_period,1,man,1,normal,TN020
+ON21,One Normal 21,normal,one_period,2,woman,2,international,TN021
+ON22,One Normal 22,normal,one_period,2,man,3,international,TN022
+ON23,One Normal 23,normal,one_period,2,woman,4,normal,TN023
+ON24,One Normal 24,normal,one_period,2,man,1,normal,TN024
+ON25,One Normal 25,normal,one_period,2,woman,2,normal,TN025
+ON26,One Normal 26,normal,one_period,2,man,3,normal,TN026
+ON27,One Normal 27,normal,one_period,2,woman,4,normal,TN027
+ON28,One Normal 28,normal,one_period,2,man,1,event,TN028
+ON29,One Normal 29,normal,one_period,2,woman,2,normal,TN029
+ON30,One Normal 30,normal,one_period,2,man,3,normal,TN030
+ON31,One Normal 31,normal,one_period,2,woman,4,normal,TN031
+ON32,One Normal 32,normal,one_period,2,man,1,normal,TN032
+ON33,One Normal 33,normal,one_period,2,woman,2,normal,TN033
+ON34,One Normal 34,normal,one_period,2,man,3,normal,TN034
+ON35,One Normal 35,normal,one_period,2,woman,4,event,TN035
+ON36,One Normal 36,normal,one_period,2,man,1,normal,TN036
+ON37,One Normal 37,normal,one_period,2,woman,2,normal,TN037
+ON38,One Normal 38,normal,one_period,2,man,3,normal,TN038
+ON39,One Normal 39,normal,one_period,2,woman,4,normal,TN039
+ON40,One Normal 40,normal,one_period,2,man,1,normal,TN040
+TN001,Two Normal 001,normal,two_period,,woman,2,international,TN002
+TN002,Two Normal 002,normal,two_period,,man,3,international,TN003
+TN003,Two Normal 003,normal,two_period,,woman,4,international,TN004
+TN004,Two Normal 004,normal,two_period,,man,5,international,TN005
+TN005,Two Normal 005,normal,two_period,,woman,1,international,TN006
+TN006,Two Normal 006,normal,two_period,,man,2,international,TN007
+TN007,Two Normal 007,normal,two_period,,woman,3,normal,ON07
+TN008,Two Normal 008,normal,two_period,,man,4,event,TN009
+TN009,Two Normal 009,normal,two_period,,woman,5,normal,TN010
+TN010,Two Normal 010,normal,two_period,,man,1,normal,TN011
+TN011,Two Normal 011,normal,two_period,,woman,2,international,TN012
+TN012,Two Normal 012,normal,two_period,,man,3,international,TN013
+TN013,Two Normal 013,normal,two_period,,woman,4,normal,TN014
+TN014,Two Normal 014,normal,two_period,,man,5,normal,ON14
+TN015,Two Normal 015,normal,two_period,,woman,1,normal,TN016
+TN016,Two Normal 016,normal,two_period,,man,2,normal,TN017
+TN017,Two Normal 017,normal,two_period,,woman,3,normal,TN018
+TN018,Two Normal 018,normal,two_period,,man,4,normal,TN019
+TN019,Two Normal 019,normal,two_period,,woman,5,event,TN020
+TN020,Two Normal 020,normal,two_period,,man,1,normal,TN021
+TN021,Two Normal 021,normal,two_period,,woman,2,normal,ON21
+TN022,Two Normal 022,normal,two_period,,man,3,normal,TN023
+TN023,Two Normal 023,normal,two_period,,woman,4,normal,TN024
+TN024,Two Normal 024,normal,two_period,,man,5,normal,TN025
+TN025,Two Normal 025,normal,two_period,,woman,1,normal,TN026
+TN026,Two Normal 026,normal,two_period,,man,2,normal,TN027
+TN027,Two Normal 027,normal,two_period,,woman,3,normal,TN028
+TN028,Two Normal 028,normal,two_period,,man,4,normal,ON28
+TN029,Two Normal 029,normal,two_period,,woman,5,normal,TN030
+TN030,Two Normal 030,normal,two_period,,man,1,international,TN031
+TN031,Two Normal 031,normal,two_period,,woman,2,event,TN032
+TN032,Two Normal 032,normal,two_period,,man,3,normal,TN033
+TN033,Two Normal 033,normal,two_period,,woman,4,normal,TN034
+TN034,Two Normal 034,normal,two_period,,man,5,normal,TN035
+TN035,Two Normal 035,normal,two_period,,woman,1,normal,ON35
+TN036,Two Normal 036,normal,two_period,,man,2,normal,TN037
+TN037,Two Normal 037,normal,two_period,,woman,3,normal,TN038
+TN038,Two Normal 038,normal,two_period,,man,4,normal,TN039
+TN039,Two Normal 039,normal,two_period,,woman,5,normal,TN040
+TN040,Two Normal 040,normal,two_period,,man,1,normal,TN041
+TN041,Two Normal 041,normal,two_period,,woman,2,normal,TN042
+TN042,Two Normal 042,normal,two_period,,man,3,normal,ON02
+TN043,Two Normal 043,normal,two_period,,woman,4,normal,TN044
+TN044,Two Normal 044,normal,two_period,,man,5,event,TN045
+TN045,Two Normal 045,normal,two_period,,woman,1,normal,TN046
+TN046,Two Normal 046,normal,two_period,,man,2,normal,TN047
+TN047,Two Normal 047,normal,two_period,,woman,3,normal,TN048
+TN048,Two Normal 048,normal,two_period,,man,4,normal,TN049
+TN049,Two Normal 049,normal,two_period,,woman,5,event,ON09
+TN050,Two Normal 050,normal,two_period,,man,1,normal,TN051
+TN051,Two Normal 051,normal,two_period,,woman,2,normal,TN052
+TN052,Two Normal 052,normal,two_period,,man,3,normal,TN053
+TN053,Two Normal 053,normal,two_period,,woman,4,event,TN001
+SX01,Sexi Mentor 01,sexi,one_period,1,woman,2,,ON01
+SX02,Sexi Mentor 02,sexi,one_period,2,man,3,,ON02
+SX03,Sexi Mentor 03,sexi,one_period,2,woman,4,,ON03
+SX04,Sexi Mentor 04,sexi,one_period,2,man,1,,ON04
+SX05,Sexi Mentor 05,sexi,two_period,,woman,2,,
+SX06,Sexi Mentor 06,sexi,two_period,,man,3,,
+SX07,Sexi Mentor 07,sexi,two_period,,woman,4,,
+SX08,Sexi Mentor 08,sexi,two_period,,man,1,,
+HV01,Hovding 01,hovding,two_period,,woman,leader,,TN001
+HV02,Hovding 02,hovding,two_period,,man,leader,,TN002
+HV03,Hovding 03,hovding,two_period,,woman,leader,,TN003
+HV04,Hovding 04,hovding,two_period,,man,leader,,TN004
+HV05,Hovding 05,hovding,two_period,,woman,leader,,TN005
+HV06,Hovding 06,hovding,two_period,,man,leader,,TN006
+HV07,Hovding 07,hovding,two_period,,woman,leader,,TN007
+HV08,Hovding 08,hovding,two_period,,man,leader,,TN008
+HV09,Hovding 09,hovding,two_period,,woman,leader,,TN009
+HV10,Hovding 10,hovding,two_period,,man,leader,,TN010
+HV11,Hovding 11,hovding,two_period,,woman,leader,,
+HV12,Hovding 12,hovding,two_period,,man,leader,,
+HV13,Hovding 13,hovding,two_period,,woman,leader,,
+HV14,Hovding 14,hovding,two_period,,man,leader,,
+HV15,Hovding 15,hovding,two_period,,woman,leader,,
+HV16,Hovding 16,hovding,two_period,,man,leader,,
+HV17,Hovding 17,hovding,two_period,,woman,leader,,
+HV18,Hovding 18,hovding,two_period,,man,leader,,
+HV19,Hovding 19,hovding,two_period,,woman,leader,,
+HV20,Hovding 20,hovding,two_period,,man,leader,,

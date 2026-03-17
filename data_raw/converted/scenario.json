@@ -1,0 +1,1934 @@
+{
+  "mentors": [
+    {
+      "id": "hovding-ruben-asarnoj",
+      "name": "Ruben Asarnoj",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-vilmer-thomsen",
+        "sexi-lukas-doberhof",
+        "sexi-maria-karlsson"
+      ]
+    },
+    {
+      "id": "normal-astrid-enerback",
+      "name": "Astrid Enerbäck",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-amanda-back",
+        "normal-ana-garcia-andersson"
+      ]
+    },
+    {
+      "id": "normal-ella-eiemarker",
+      "name": "Ella Eiemarker",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "normal-irma-krook",
+        "sexi-ellen-jahn",
+        "sexi-maria-karlsson"
+      ]
+    },
+    {
+      "id": "sexi-marta-venema-holmgren",
+      "name": "Märta Venema Holmgren",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-alice-blomberg",
+        "hovding-hanna-widlund",
+        "normal-emelie-wollin-ekberg"
+      ]
+    },
+    {
+      "id": "hovding-hanna-widlund",
+      "name": "Hanna Widlund",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-vera-dahlborg",
+        "sexi-marta-venema-holmgren",
+        "sexi-alice-blomberg"
+      ]
+    },
+    {
+      "id": "normal-julia-nilsson",
+      "name": "Julia Nilsson",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "international",
+      "requested_with": [
+        "normal-ebba-wahlin-jansson"
+      ]
+    },
+    {
+      "id": "normal-marcus-ferm",
+      "name": "Marcus Ferm",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "international",
+      "requested_with": []
+    },
+    {
+      "id": "sexi-carl-almtun",
+      "name": "Carl Almtun",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-gaspard-berglund",
+        "normal-jakob-sundstrom",
+        "sexi-emil-wetterhall"
+      ]
+    },
+    {
+      "id": "hovding-felix-vungi",
+      "name": "Felix Vungi",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-gaspard-berglund",
+        "hovding-august-bergstrom",
+        "normal-jacob-shishoo"
+      ]
+    },
+    {
+      "id": "normal-allison-spicer",
+      "name": "Allison Spicer",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "unknown",
+      "normal_subrole": "international",
+      "requested_with": [
+        "normal-olivera-stupic"
+      ]
+    },
+    {
+      "id": "normal-anton-wolf",
+      "name": "Anton Wolf",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "normal-filip-schalin",
+        "normal-martin-pettersson"
+      ]
+    },
+    {
+      "id": "sexi-maria-karlsson",
+      "name": "Maria Karlsson",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-elsa-mauleon-stenudd",
+        "hovding-ruben-asarnoj",
+        "normal-ella-eiemarker"
+      ]
+    },
+    {
+      "id": "hovding-norah-stenstrom",
+      "name": "Norah Stenström",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-ava-haghighi"
+      ]
+    },
+    {
+      "id": "normal-david-bernvetter",
+      "name": "David Bernvetter",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-andreas-tatidis"
+      ]
+    },
+    {
+      "id": "normal-jakob-sundstrom",
+      "name": "Jakob Sundström",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "sexi-carl-almtun"
+      ]
+    },
+    {
+      "id": "sexi-rebecca-svahn",
+      "name": "Rebecca Svahn",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-ella-moe"
+      ]
+    },
+    {
+      "id": "hovding-linn-lynch",
+      "name": "Linn Lynch",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-wilma-bergman",
+        "normal-julia-rosvall",
+        "normal-gustav-aberg"
+      ]
+    },
+    {
+      "id": "normal-marta-marklinder",
+      "name": "Märta Marklinder",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-tilde-timlon",
+        "normal-elina-appenrodt",
+        "normal-fredrika-grubeck"
+      ]
+    },
+    {
+      "id": "normal-irma-krook",
+      "name": "Irma Krook",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "normal-paula-landen",
+        "normal-fanny-lundqvist",
+        "normal-ella-eiemarker"
+      ]
+    },
+    {
+      "id": "sexi-emma-isaksson-jonek",
+      "name": "Emma Isaksson Jonek",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-julia-rosvall",
+        "hovding-alice-curman"
+      ]
+    },
+    {
+      "id": "hovding-wilmer-ahnfelt",
+      "name": "Wilmer Ahnfelt",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-elis-ramberg",
+        "hovding-emile-sodergren",
+        "hovding-jesper-areskoug"
+      ]
+    },
+    {
+      "id": "normal-jonna-angel",
+      "name": "Jonna Angel",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-lundegren",
+        "normal-ludvig-freiding-wellberg"
+      ]
+    },
+    {
+      "id": "normal-benjamin-lindborg",
+      "name": "Benjamin Lindborg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "normal-filip-schalin",
+        "normal-martin-araskog"
+      ]
+    },
+    {
+      "id": "sexi-gustav-hellqvist",
+      "name": "Gustav Hellqvist",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-simon-wernersson",
+        "sexi-jacob-hertze-hansson"
+      ]
+    },
+    {
+      "id": "hovding-emile-sodergren",
+      "name": "Emile Södergren",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-wilmer-ahnfelt",
+        "hovding-elis-ramberg"
+      ]
+    },
+    {
+      "id": "normal-martin-araskog",
+      "name": "Martin Araskog",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-love-hallonsten",
+        "normal-benjamin-lindborg",
+        "hovding-elliot-kopper"
+      ]
+    },
+    {
+      "id": "normal-hugo-westholm",
+      "name": "Hugo Westholm",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-nils-palsson",
+        "normal-gustav-aberg"
+      ]
+    },
+    {
+      "id": "sexi-simon-wernersson",
+      "name": "Simon Wernersson",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-jacob-hertze-hansson",
+        "sexi-sigrid-hornemann-larsen"
+      ]
+    },
+    {
+      "id": "hovding-wilma-bergman",
+      "name": "Wilma Bergman",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-linn-lynch",
+        "normal-gustav-aberg",
+        "normal-julia-rosvall"
+      ]
+    },
+    {
+      "id": "normal-isac-berkani",
+      "name": "Isac Berkani",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-oscar-kjellman",
+      "name": "Oscar Kjellman",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-harald-liden-ulvskog",
+        "normal-joel-ljungqvist"
+      ]
+    },
+    {
+      "id": "sexi-sigrid-hornemann-larsen",
+      "name": "Sigrid Hornemann Larsen",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-sonia-mannheimer",
+        "normal-tobias-schon",
+        "sexi-jacob-hertze-hansson"
+      ]
+    },
+    {
+      "id": "hovding-freja-linusson-hahn",
+      "name": "Freja Linusson-Hahn",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-sandra-gisslin",
+        "normal-simon-lindqvist"
+      ]
+    },
+    {
+      "id": "normal-elina-appenrodt",
+      "name": "Elina Appenrodt",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-fredrika-grubeck"
+      ]
+    },
+    {
+      "id": "normal-svante-bjorkborg",
+      "name": "Svante Björkborg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "sexi-alice-blomberg",
+      "name": "Alice Blomberg",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-ebba-sjoberg",
+        "hovding-hanna-widlund"
+      ]
+    },
+    {
+      "id": "hovding-erik-osterberg",
+      "name": "Erik Österberg",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-nils-palsson",
+        "normal-gustav-aberg",
+        "hovding-oskar-andersson"
+      ]
+    },
+    {
+      "id": "normal-tom-carlander",
+      "name": "Tom Carlander",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-david-serenius",
+        "hovding-linn-lynch",
+        "hovding-wilma-bergman"
+      ]
+    },
+    {
+      "id": "normal-ana-corluka",
+      "name": "Ana Corluka",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-lisa-anderson",
+        "normal-fanny-lundqvist",
+        "normal-irma-krook"
+      ]
+    },
+    {
+      "id": "sexi-maximilian-von-gross",
+      "name": "Maximilian Von Gross",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-gaspard-berglund",
+        "hovding-august-bergstrom",
+        "normal-victor-lannerhjelm"
+      ]
+    },
+    {
+      "id": "hovding-oskar-andersson",
+      "name": "Oskar Andersson",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": []
+    },
+    {
+      "id": "normal-elliot-hermansson",
+      "name": "Elliot Hermansson",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-martin-pettersson",
+      "name": "Martin Pettersson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-anton-wolf",
+        "normal-david-bernvetter",
+        "normal-hannes-wiebols"
+      ]
+    },
+    {
+      "id": "sexi-elsa-mauleon-stenudd",
+      "name": "Elsa Mauléon Stenudd",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-maria-karlsson",
+        "normal-clara-ruud",
+        "normal-alexandra-persson"
+      ]
+    },
+    {
+      "id": "hovding-jesper-areskoug",
+      "name": "Jesper Areskoug",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-gilbert-ekberg-hedin",
+        "hovding-wilmer-ahnfelt"
+      ]
+    },
+    {
+      "id": "normal-le-vy-do",
+      "name": "Le Vy Do",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-jonathan-wikstrom-shemer",
+        "normal-hilma-sjolander",
+        "normal-filip-schalin"
+      ]
+    },
+    {
+      "id": "normal-olivera-stupic",
+      "name": "Olivera Stupić",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "unknown",
+      "normal_subrole": "international",
+      "requested_with": [
+        "normal-allison-spicer"
+      ]
+    },
+    {
+      "id": "sexi-miriam-herulf",
+      "name": "Miriam Herulf",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-ebba-sjoberg",
+        "hovding-hanna-widlund",
+        "sexi-maria-karlsson"
+      ]
+    },
+    {
+      "id": "hovding-elis-ramberg",
+      "name": "Elis Ramberg",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": []
+    },
+    {
+      "id": "normal-nelly-hesselstedt",
+      "name": "Nelly Hesselstedt",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-tobias-schon"
+      ]
+    },
+    {
+      "id": "normal-erik-svedman-sundberg",
+      "name": "Erik Svedman Sundberg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-august-bergstrom",
+        "hovding-isaac-kilefors",
+        "hovding-elis-ramberg"
+      ]
+    },
+    {
+      "id": "sexi-emil-wetterhall",
+      "name": "Emil Wetterhall",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-olle-lundin",
+        "normal-simon-svenmar"
+      ]
+    },
+    {
+      "id": "hovding-gilbert-ekberg-hedin",
+      "name": "Gilbert Ekberg Hedin",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-elliot-kopper",
+        "hovding-jesper-areskoug"
+      ]
+    },
+    {
+      "id": "normal-axel-sjoqvist-arlehov",
+      "name": "Axel Sjöqvist Arlehov",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-hilma-sjolander",
+      "name": "Hilma Sjölander",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "sexi-vilmer-thomsen",
+      "name": "Vilmer Thomsen",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-lukas-doberhof",
+        "hovding-ruben-asarnoj",
+        "sexi-hampus-fagerli"
+      ]
+    },
+    {
+      "id": "hovding-isaac-kilefors",
+      "name": "Isaac Kilefors",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-oskar-andersson",
+        "hovding-elis-ramberg"
+      ]
+    },
+    {
+      "id": "normal-tobias-schon",
+      "name": "Tobias Schön",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-nelly-hesselstedt"
+      ]
+    },
+    {
+      "id": "normal-gustav-aberg",
+      "name": "Gustav Åberg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-nils-palsson",
+        "hovding-erik-osterberg",
+        "hovding-wilma-bergman"
+      ]
+    },
+    {
+      "id": "sexi-hampus-fagerli",
+      "name": "Hampus Fagerli",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-simon-svenmar",
+        "normal-harald-magnusson",
+        "sexi-vilmer-thomsen"
+      ]
+    },
+    {
+      "id": "hovding-jonathan-wikstrom-shemer",
+      "name": "Jonathan Wikström Shemer",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-le-vy-do",
+        "normal-hugo-westholm"
+      ]
+    },
+    {
+      "id": "normal-sonia-mannheimer",
+      "name": "Sonia Mannheimer",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-lundegren",
+        "normal-tobias-schon"
+      ]
+    },
+    {
+      "id": "normal-ava-haghighi",
+      "name": "Ava Haghighi",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-norah-stenstrom"
+      ]
+    },
+    {
+      "id": "sexi-lukas-doberhof",
+      "name": "Lukas Doberhof",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-vilmer-thomsen",
+        "hovding-ruben-asarnoj"
+      ]
+    },
+    {
+      "id": "hovding-elliot-kopper",
+      "name": "Elliot Köpper",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "hovding-jesper-areskoug",
+        "hovding-elis-ramberg",
+        "hovding-gilbert-ekberg-hedin"
+      ]
+    },
+    {
+      "id": "normal-albert-ahnfelt",
+      "name": "Albert Ahnfelt",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 2,
+      "gender": "m",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-mattis-ranheim"
+      ]
+    },
+    {
+      "id": "normal-fanny-lundqvist",
+      "name": "Fanny Lundqvist",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-lisa-anderson",
+        "normal-irma-krook",
+        "sexi-maria-karlsson"
+      ]
+    },
+    {
+      "id": "sexi-jonatan-axsater",
+      "name": "Jonatan Axsäter",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-simon-svenmar",
+        "normal-olle-lundin"
+      ]
+    },
+    {
+      "id": "hovding-alice-curman",
+      "name": "Alice Curman",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-julia-rosvall"
+      ]
+    },
+    {
+      "id": "normal-gustav-wedell",
+      "name": "Gustav Wedell",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-ludvig-freiding-wellberg",
+        "normal-arvid-gustafsson",
+        "sexi-alex-dennerhed"
+      ]
+    },
+    {
+      "id": "normal-julia-rosvall",
+      "name": "Julia Rosvall",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-alice-curman"
+      ]
+    },
+    {
+      "id": "sexi-hugo-storlind",
+      "name": "Hugo Storlind",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-alex-dennerhed"
+      ]
+    },
+    {
+      "id": "hovding-august-bergstrom",
+      "name": "August Bergström",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-victor-lannerhjelm",
+        "hovding-felix-vungi"
+      ]
+    },
+    {
+      "id": "normal-mattis-ranheim",
+      "name": "Mattis Ranheim",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 2,
+      "gender": "m",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-albert-ahnfelt"
+      ]
+    },
+    {
+      "id": "normal-nils-palsson",
+      "name": "Nils Pålsson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-gustav-aberg",
+        "hovding-erik-osterberg",
+        "hovding-gilbert-ekberg-hedin"
+      ]
+    },
+    {
+      "id": "sexi-ebba-sjoberg",
+      "name": "Ebba Sjöberg",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-miriam-herulf",
+        "hovding-hanna-widlund",
+        "sexi-alice-blomberg"
+      ]
+    },
+    {
+      "id": "hovding-gaspard-berglund",
+      "name": "Gaspard Berglund",
+      "category": "hovding",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-carl-almtun",
+        "sexi-maximilian-von-gross",
+        "hovding-elis-ramberg"
+      ]
+    },
+    {
+      "id": "normal-albin-zymberi",
+      "name": "Albin Zymberi",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I22",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-olga-martin-lof",
+      "name": "Olga Martin-Löf",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-sofia-wallin",
+        "normal-lisa-anderson",
+        "normal-clara-ruud"
+      ]
+    },
+    {
+      "id": "sexi-jacob-hertze-hansson",
+      "name": "Jacob Hertze Hansson",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "sexi-gustav-hellqvist",
+        "sexi-sigrid-hornemann-larsen",
+        "sexi-simon-wernersson"
+      ]
+    },
+    {
+      "id": "normal-carl-nygren",
+      "name": "Carl Nygren",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "sexi-alex-dennerhed",
+        "normal-david-serenius"
+      ]
+    },
+    {
+      "id": "normal-herman-linde",
+      "name": "Herman Linde",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-wilmer-ahnfelt",
+        "normal-carl-anton-oien",
+        "hovding-isaac-kilefors"
+      ]
+    },
+    {
+      "id": "sexi-ellen-jahn",
+      "name": "Ellen Jahn",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-ella-eiemarker",
+        "sexi-maria-karlsson"
+      ]
+    },
+    {
+      "id": "normal-truls-hambraeus",
+      "name": "Truls Hambraeus",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 2,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-gaspard-berglund",
+        "sexi-maximilian-von-gross"
+      ]
+    },
+    {
+      "id": "normal-harald-magnusson",
+      "name": "Harald Magnusson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-svenmar",
+        "sexi-emil-wetterhall",
+        "sexi-hampus-fagerli"
+      ]
+    },
+    {
+      "id": "sexi-sandra-gisslin",
+      "name": "Sandra Gisslin",
+      "category": "sexi",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-hilma-sjolander"
+      ]
+    },
+    {
+      "id": "normal-fredrika-grubeck",
+      "name": "Fredrika Grubeck",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "sexi-lina-fabiansson",
+        "normal-elina-appenrodt"
+      ]
+    },
+    {
+      "id": "normal-sofia-wallin",
+      "name": "Sofia Wallin",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-olga-martin-lof"
+      ]
+    },
+    {
+      "id": "sexi-alex-dennerhed",
+      "name": "Alex Dennerhed",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-arvid-gustafsson",
+        "normal-carl-nygren"
+      ]
+    },
+    {
+      "id": "normal-david-serenius",
+      "name": "David Serenius",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-carl-nygren",
+        "normal-arvid-gustafsson",
+        "normal-tom-carlander"
+      ]
+    },
+    {
+      "id": "normal-simon-svenmar",
+      "name": "Simon Svenmar",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-harald-magnusson",
+        "sexi-hampus-fagerli",
+        "sexi-emil-wetterhall"
+      ]
+    },
+    {
+      "id": "sexi-lina-fabiansson",
+      "name": "Lina Fabiansson",
+      "category": "sexi",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": null,
+      "requested_with": [
+        "normal-fredrika-grubeck"
+      ]
+    },
+    {
+      "id": "normal-hannes-wiebols",
+      "name": "Hannes Wiebols",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 2,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-martin-pettersson",
+        "normal-hugo-westholm",
+        "normal-vidar-pihlsgard"
+      ]
+    },
+    {
+      "id": "normal-jacob-shishoo",
+      "name": "Jacob Shishoo",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-jakob-sundstrom",
+        "hovding-gaspard-berglund",
+        "hovding-oskar-andersson"
+      ]
+    },
+    {
+      "id": "normal-filip-schalin",
+      "name": "Filip Schalin",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-anton-wolf",
+        "normal-linus-willemo",
+        "normal-benjamin-lindborg"
+      ]
+    },
+    {
+      "id": "normal-victor-lannerhjelm",
+      "name": "Victor Lannerhjelm",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-august-bergstrom",
+        "normal-truls-hambraeus"
+      ]
+    },
+    {
+      "id": "normal-arvid-gustafsson",
+      "name": "Arvid Gustafsson",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-ludvig-freiding-wellberg"
+      ]
+    },
+    {
+      "id": "normal-lisa-anderson",
+      "name": "Lisa Anderson +",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-clara-ruud",
+        "normal-fanny-lundqvist",
+        "normal-ana-corluka"
+      ]
+    },
+    {
+      "id": "normal-tilde-anyuru",
+      "name": "Tilde Anyuru",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-amanda-back",
+        "sexi-sandra-gisslin"
+      ]
+    },
+    {
+      "id": "normal-vera-dahlborg",
+      "name": "Vera Dahlborg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-hanna-widlund",
+        "normal-clara-ruud"
+      ]
+    },
+    {
+      "id": "normal-amanda-back",
+      "name": "Amanda Bäck",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-tilde-anyuru",
+        "normal-astrid-enerback",
+        "normal-ana-garcia-andersson"
+      ]
+    },
+    {
+      "id": "normal-harald-liden-ulvskog",
+      "name": "Harald Lidén Ulvskog",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": [
+        "normal-oscar-kjellman",
+        "normal-joel-ljungqvist",
+        "normal-anton-andreasson"
+      ]
+    },
+    {
+      "id": "normal-ana-garcia-andersson",
+      "name": "Ana Garcia Andersson",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-amanda-back",
+        "normal-astrid-enerback"
+      ]
+    },
+    {
+      "id": "normal-paula-landen",
+      "name": "Paula Landén",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-alexandra-persson",
+        "normal-irma-krook",
+        "normal-ella-eiemarker"
+      ]
+    },
+    {
+      "id": "normal-leonardo-capretti-kremer",
+      "name": "Leonardo Capretti Kremer",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-love-hallonsten",
+      "name": "Love Hallonsten",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-martin-araskog",
+        "hovding-emile-sodergren",
+        "hovding-elliot-kopper"
+      ]
+    },
+    {
+      "id": "normal-joel-ljungqvist",
+      "name": "Joel Ljungqvist",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-hampus-hedensjo",
+        "normal-oscar-kjellman",
+        "normal-anton-andreasson"
+      ]
+    },
+    {
+      "id": "normal-emelie-wollin-ekberg",
+      "name": "Emelie Wollin Ekberg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "sexi-rebecca-svahn"
+      ]
+    },
+    {
+      "id": "normal-tilde-timlon",
+      "name": "Tilde Timlon",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-marta-marklinder",
+        "normal-fredrika-grubeck"
+      ]
+    },
+    {
+      "id": "normal-fanny-hansson",
+      "name": "Fanny Hansson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-ella-moe",
+        "normal-emelie-wollin-ekberg"
+      ]
+    },
+    {
+      "id": "normal-elle-hoveman",
+      "name": "Elle Hoveman",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-hilma-sjolander",
+        "sexi-sandra-gisslin"
+      ]
+    },
+    {
+      "id": "normal-clara-ruud",
+      "name": "Clara Ruud",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-lisa-anderson",
+        "normal-vera-dahlborg"
+      ]
+    },
+    {
+      "id": "normal-fred-linner",
+      "name": "Fred Linnér",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-svenmar"
+      ]
+    },
+    {
+      "id": "normal-vilgot-lundgren",
+      "name": "Vilgot Lundgren",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-lindqvist"
+      ]
+    },
+    {
+      "id": "normal-simon-lundegren",
+      "name": "Simon Lundegren",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-sonia-mannheimer",
+        "normal-jonna-angel",
+        "normal-ludvig-freiding-wellberg"
+      ]
+    },
+    {
+      "id": "normal-emrik-gruden",
+      "name": "Emrik Grudén",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "event",
+      "requested_with": []
+    },
+    {
+      "id": "normal-vidar-pihlsgard",
+      "name": "Vidar Pihlsgård",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 2,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-axel-runow-magnusson",
+        "normal-linus-willemo"
+      ]
+    },
+    {
+      "id": "normal-andreas-tatidis",
+      "name": "Andreas Tatidis",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-isaac-kilefors",
+        "normal-david-bernvetter"
+      ]
+    },
+    {
+      "id": "normal-petter-froidh",
+      "name": "Petter Fröidh",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-anton-andreasson",
+      "name": "Anton Andreasson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-hampus-hedensjo",
+        "normal-oscar-kjellman",
+        "normal-joel-ljungqvist"
+      ]
+    },
+    {
+      "id": "normal-ludvig-freiding-wellberg",
+      "name": "Ludvig Freiding Wellberg",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-arvid-gustafsson"
+      ]
+    },
+    {
+      "id": "normal-olle-lundin",
+      "name": "Olle Lundin",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-simon-svenmar",
+        "normal-harald-magnusson",
+        "normal-carl-nygren"
+      ]
+    },
+    {
+      "id": "normal-ebba-wahlin-jansson",
+      "name": "Ebba Wahlin Jansson",
+      "category": "normal",
+      "participation": "one_period",
+      "preferred_period": 1,
+      "gender": "f",
+      "year": "I24",
+      "normal_subrole": "international",
+      "requested_with": [
+        "normal-julia-nilsson"
+      ]
+    },
+    {
+      "id": "normal-anton-johansson",
+      "name": "Anton Johansson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I24",
+      "normal_subrole": "normal",
+      "requested_with": []
+    },
+    {
+      "id": "normal-jesper-walberg",
+      "name": "Jesper Walberg",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-harald-magnusson",
+        "normal-simon-svenmar"
+      ]
+    },
+    {
+      "id": "normal-ella-moe",
+      "name": "Ella Moe",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-fanny-hansson",
+        "normal-emelie-wollin-ekberg",
+        "normal-alice-rask-turesson"
+      ]
+    },
+    {
+      "id": "normal-alessandro-cassani",
+      "name": "Alessandro Cassani",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "unknown",
+      "normal_subrole": "international",
+      "requested_with": [
+        "normal-allison-spicer",
+        "normal-olivera-stupic"
+      ]
+    },
+    {
+      "id": "normal-lena-welmans",
+      "name": "Lena Welmans",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "unknown",
+      "normal_subrole": "international",
+      "requested_with": []
+    },
+    {
+      "id": "normal-linus-willemo",
+      "name": "Linus Willemo ++",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-filip-schalin",
+        "normal-vidar-pihlsgard",
+        "normal-david-bernvetter"
+      ]
+    },
+    {
+      "id": "normal-axel-runow-magnusson",
+      "name": "Axel Rünow Magnusson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-linus-willemo",
+        "normal-vidar-pihlsgard"
+      ]
+    },
+    {
+      "id": "normal-alice-rask-turesson",
+      "name": "Alice Rask Turesson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "sexi-rebecca-svahn"
+      ]
+    },
+    {
+      "id": "normal-sinan-pulavar-ashraf",
+      "name": "Sinan Pulavar Ashraf",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "unknown",
+      "normal_subrole": "international",
+      "requested_with": []
+    },
+    {
+      "id": "normal-ingrid-wijkstrom",
+      "name": "Ingrid Wijkström",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "hovding-linn-lynch",
+        "hovding-wilma-bergman"
+      ]
+    },
+    {
+      "id": "normal-hampus-hedensjo",
+      "name": "Hampus Hedensjö",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-oscar-kjellman",
+        "normal-joel-ljungqvist"
+      ]
+    },
+    {
+      "id": "normal-carl-anton-oien",
+      "name": "Carl-Anton Öien +",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-herman-linde",
+        "hovding-isaac-kilefors"
+      ]
+    },
+    {
+      "id": "normal-simon-lindqvist",
+      "name": "Simon Lindqvist",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "m",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-vilgot-lundgren"
+      ]
+    },
+    {
+      "id": "normal-alexandra-persson",
+      "name": "Alexandra Persson",
+      "category": "normal",
+      "participation": "two_period",
+      "preferred_period": null,
+      "gender": "f",
+      "year": "I25",
+      "normal_subrole": "normal",
+      "requested_with": [
+        "normal-paula-landen",
+        "sexi-elsa-mauleon-stenudd",
+        "normal-clara-ruud"
+      ]
+    }
+  ],
+  "blocked_pairs": [],
+  "settings": {
+    "period_count": 2,
+    "groups_per_period": 10,
+    "regular_group_quota_one_period": 2,
+    "regular_group_quota_two_period": 5,
+    "international_extra_mentors": 3,
+    "international_group_numbers": {
+      "1": 1,
+      "2": 1
+    },
+    "ideal_max_event_mentors_per_group": 1,
+    "absolute_max_event_mentors_per_group": 2,
+    "max_solver_time_seconds": 20,
+    "enforce_strict_quotas_when_feasible": true
+  },
+  "weights": {
+    "quota_shortfall": 1000000,
+    "quota_overflow": 850000,
+    "international_extra_two_period_shortfall": 80000,
+    "international_preference": 150000,
+    "nonpreferred_international": 20000,
+    "request_missing": 250000,
+    "preferred_period_miss": 8000,
+    "repeated_groupmates": 150,
+    "event_second_mentor": 10000,
+    "event_evenness": 1000,
+    "sexi_evenness": 5000,
+    "balance_gender": 250,
+    "balance_year": 250
+  }
+}

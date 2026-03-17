@@ -1,0 +1,7 @@
+{
+  "scenario": "demo_scenario.json",
+  "mentors_csv": "demo_mentors.csv",
+  "blocked_pairs_csv": "demo_blocked_pairs.csv",
+  "mentor_count": 121,
+  "blocked_pair_count": 9
+}

@@ -1,0 +1,138 @@
+id,name,category,participation,preferred_period,gender,year,normal_subrole,requested_with
+hovding-ruben-asarnoj,Ruben Asarnoj,hovding,two_period,,m,I25,,sexi-vilmer-thomsen;sexi-lukas-doberhof;sexi-maria-karlsson
+normal-astrid-enerback,Astrid Enerbäck,normal,one_period,1,f,I25,normal,normal-amanda-back;normal-ana-garcia-andersson
+normal-ella-eiemarker,Ella Eiemarker,normal,two_period,,f,I25,event,normal-irma-krook;sexi-ellen-jahn;sexi-maria-karlsson
+sexi-marta-venema-holmgren,Märta Venema Holmgren,sexi,two_period,,f,I25,,sexi-alice-blomberg;hovding-hanna-widlund;normal-emelie-wollin-ekberg
+hovding-hanna-widlund,Hanna Widlund,hovding,two_period,,f,I25,,normal-vera-dahlborg;sexi-marta-venema-holmgren;sexi-alice-blomberg
+normal-julia-nilsson,Julia Nilsson,normal,one_period,1,f,I24,international,normal-ebba-wahlin-jansson
+normal-marcus-ferm,Marcus Ferm,normal,two_period,,m,I25,international,
+sexi-carl-almtun,Carl Almtun,sexi,two_period,,m,I25,,hovding-gaspard-berglund;normal-jakob-sundstrom;sexi-emil-wetterhall
+hovding-felix-vungi,Felix Vungi,hovding,two_period,,m,I25,,hovding-gaspard-berglund;hovding-august-bergstrom;normal-jacob-shishoo
+normal-allison-spicer,Allison Spicer,normal,one_period,1,f,unknown,international,normal-olivera-stupic
+normal-anton-wolf,Anton Wolf,normal,two_period,,m,I25,event,normal-filip-schalin;normal-martin-pettersson
+sexi-maria-karlsson,Maria Karlsson,sexi,two_period,,f,I25,,sexi-elsa-mauleon-stenudd;hovding-ruben-asarnoj;normal-ella-eiemarker
+hovding-norah-stenstrom,Norah Stenström,hovding,two_period,,f,I25,,normal-ava-haghighi
+normal-david-bernvetter,David Bernvetter,normal,one_period,1,m,I25,normal,normal-andreas-tatidis
+normal-jakob-sundstrom,Jakob Sundström,normal,two_period,,m,I25,event,sexi-carl-almtun
+sexi-rebecca-svahn,Rebecca Svahn,sexi,two_period,,f,I25,,normal-ella-moe
+hovding-linn-lynch,Linn Lynch,hovding,two_period,,f,I25,,hovding-wilma-bergman;normal-julia-rosvall;normal-gustav-aberg
+normal-marta-marklinder,Märta Marklinder,normal,one_period,1,f,I24,normal,normal-tilde-timlon;normal-elina-appenrodt;normal-fredrika-grubeck
+normal-irma-krook,Irma Krook,normal,two_period,,f,I25,event,normal-paula-landen;normal-fanny-lundqvist;normal-ella-eiemarker
+sexi-emma-isaksson-jonek,Emma Isaksson Jonek,sexi,two_period,,f,I25,,normal-julia-rosvall;hovding-alice-curman
+hovding-wilmer-ahnfelt,Wilmer Ahnfelt,hovding,two_period,,m,I25,,hovding-elis-ramberg;hovding-emile-sodergren;hovding-jesper-areskoug
+normal-jonna-angel,Jonna Angel,normal,one_period,1,f,I24,normal,normal-simon-lundegren;normal-ludvig-freiding-wellberg
+normal-benjamin-lindborg,Benjamin Lindborg,normal,two_period,,m,I25,event,normal-filip-schalin;normal-martin-araskog
+sexi-gustav-hellqvist,Gustav Hellqvist,sexi,one_period,1,m,I24,,sexi-simon-wernersson;sexi-jacob-hertze-hansson
+hovding-emile-sodergren,Emile Södergren,hovding,two_period,,m,I25,,hovding-wilmer-ahnfelt;hovding-elis-ramberg
+normal-martin-araskog,Martin Araskog,normal,one_period,1,m,I25,normal,normal-love-hallonsten;normal-benjamin-lindborg;hovding-elliot-kopper
+normal-hugo-westholm,Hugo Westholm,normal,two_period,,m,I25,normal,normal-nils-palsson;normal-gustav-aberg
+sexi-simon-wernersson,Simon Wernersson,sexi,one_period,1,m,I24,,sexi-jacob-hertze-hansson;sexi-sigrid-hornemann-larsen
+hovding-wilma-bergman,Wilma Bergman,hovding,two_period,,f,I25,,hovding-linn-lynch;normal-gustav-aberg;normal-julia-rosvall
+normal-isac-berkani,Isac Berkani,normal,one_period,1,m,I24,normal,
+normal-oscar-kjellman,Oscar Kjellman,normal,two_period,,m,I25,normal,normal-harald-liden-ulvskog;normal-joel-ljungqvist
+sexi-sigrid-hornemann-larsen,Sigrid Hornemann Larsen,sexi,one_period,1,f,I24,,normal-sonia-mannheimer;normal-tobias-schon;sexi-jacob-hertze-hansson
+hovding-freja-linusson-hahn,Freja Linusson-Hahn,hovding,two_period,,f,I25,,sexi-sandra-gisslin;normal-simon-lindqvist
+normal-elina-appenrodt,Elina Appenrodt,normal,one_period,1,f,I24,normal,normal-fredrika-grubeck
+normal-svante-bjorkborg,Svante Björkborg,normal,two_period,,m,I22,normal,
+sexi-alice-blomberg,Alice Blomberg,sexi,two_period,,f,I25,,sexi-ebba-sjoberg;hovding-hanna-widlund
+hovding-erik-osterberg,Erik Österberg,hovding,two_period,,m,I25,,normal-nils-palsson;normal-gustav-aberg;hovding-oskar-andersson
+normal-tom-carlander,Tom Carlander,normal,one_period,1,m,I24,normal,normal-david-serenius;hovding-linn-lynch;hovding-wilma-bergman
+normal-ana-corluka,Ana Corluka,normal,two_period,,f,I25,normal,normal-lisa-anderson;normal-fanny-lundqvist;normal-irma-krook
+sexi-maximilian-von-gross,Maximilian Von Gross,sexi,two_period,,m,I25,,hovding-gaspard-berglund;hovding-august-bergstrom;normal-victor-lannerhjelm
+hovding-oskar-andersson,Oskar Andersson,hovding,two_period,,m,I25,,
+normal-elliot-hermansson,Elliot Hermansson,normal,one_period,1,m,I24,normal,
+normal-martin-pettersson,Martin Pettersson,normal,two_period,,m,I25,normal,normal-anton-wolf;normal-david-bernvetter;normal-hannes-wiebols
+sexi-elsa-mauleon-stenudd,Elsa Mauléon Stenudd,sexi,two_period,,f,I25,,sexi-maria-karlsson;normal-clara-ruud;normal-alexandra-persson
+hovding-jesper-areskoug,Jesper Areskoug,hovding,two_period,,m,I25,,hovding-gilbert-ekberg-hedin;hovding-wilmer-ahnfelt
+normal-le-vy-do,Le Vy Do,normal,one_period,1,f,I25,normal,hovding-jonathan-wikstrom-shemer;normal-hilma-sjolander;normal-filip-schalin
+normal-olivera-stupic,Olivera Stupić,normal,two_period,,m,unknown,international,normal-allison-spicer
+sexi-miriam-herulf,Miriam Herulf,sexi,two_period,,f,I25,,sexi-ebba-sjoberg;hovding-hanna-widlund;sexi-maria-karlsson
+hovding-elis-ramberg,Elis Ramberg,hovding,two_period,,m,I25,,
+normal-nelly-hesselstedt,Nelly Hesselstedt,normal,one_period,1,f,I22,normal,normal-tobias-schon
+normal-erik-svedman-sundberg,Erik Svedman Sundberg,normal,two_period,,m,I25,normal,hovding-august-bergstrom;hovding-isaac-kilefors;hovding-elis-ramberg
+sexi-emil-wetterhall,Emil Wetterhall,sexi,two_period,,m,I25,,normal-olle-lundin;normal-simon-svenmar
+hovding-gilbert-ekberg-hedin,Gilbert Ekberg Hedin,hovding,two_period,,m,I25,,hovding-elliot-kopper;hovding-jesper-areskoug
+normal-axel-sjoqvist-arlehov,Axel Sjöqvist Arlehov,normal,one_period,1,m,I24,normal,
+normal-hilma-sjolander,Hilma Sjölander,normal,two_period,,f,I25,normal,
+sexi-vilmer-thomsen,Vilmer Thomsen,sexi,two_period,,m,I25,,sexi-lukas-doberhof;hovding-ruben-asarnoj;sexi-hampus-fagerli
+hovding-isaac-kilefors,Isaac Kilefors,hovding,two_period,,m,I25,,hovding-oskar-andersson;hovding-elis-ramberg
+normal-tobias-schon,Tobias Schön,normal,one_period,1,m,I22,normal,normal-nelly-hesselstedt
+normal-gustav-aberg,Gustav Åberg,normal,two_period,,m,I25,normal,normal-nils-palsson;hovding-erik-osterberg;hovding-wilma-bergman
+sexi-hampus-fagerli,Hampus Fagerli,sexi,two_period,,m,I25,,normal-simon-svenmar;normal-harald-magnusson;sexi-vilmer-thomsen
+hovding-jonathan-wikstrom-shemer,Jonathan Wikström Shemer,hovding,two_period,,m,I25,,normal-le-vy-do;normal-hugo-westholm
+normal-sonia-mannheimer,Sonia Mannheimer,normal,one_period,1,f,I24,normal,normal-simon-lundegren;normal-tobias-schon
+normal-ava-haghighi,Ava Haghighi,normal,two_period,,f,I25,normal,hovding-norah-stenstrom
+sexi-lukas-doberhof,Lukas Doberhof,sexi,two_period,,m,I25,,sexi-vilmer-thomsen;hovding-ruben-asarnoj
+hovding-elliot-kopper,Elliot Köpper,hovding,two_period,,m,I25,,hovding-jesper-areskoug;hovding-elis-ramberg;hovding-gilbert-ekberg-hedin
+normal-albert-ahnfelt,Albert Ahnfelt,normal,one_period,2,m,I22,normal,normal-mattis-ranheim
+normal-fanny-lundqvist,Fanny Lundqvist,normal,two_period,,f,I25,normal,normal-lisa-anderson;normal-irma-krook;sexi-maria-karlsson
+sexi-jonatan-axsater,Jonatan Axsäter,sexi,two_period,,m,I25,,normal-simon-svenmar;normal-olle-lundin
+hovding-alice-curman,Alice Curman,hovding,two_period,,f,I25,,normal-julia-rosvall
+normal-gustav-wedell,Gustav Wedell,normal,one_period,1,m,I24,normal,normal-ludvig-freiding-wellberg;normal-arvid-gustafsson;sexi-alex-dennerhed
+normal-julia-rosvall,Julia Rosvall,normal,two_period,,f,I25,normal,hovding-alice-curman
+sexi-hugo-storlind,Hugo Storlind,sexi,one_period,1,m,I24,,sexi-alex-dennerhed
+hovding-august-bergstrom,August Bergström,hovding,two_period,,m,I25,,normal-victor-lannerhjelm;hovding-felix-vungi
+normal-mattis-ranheim,Mattis Ranheim,normal,one_period,2,m,I22,normal,normal-albert-ahnfelt
+normal-nils-palsson,Nils Pålsson,normal,two_period,,m,I25,normal,normal-gustav-aberg;hovding-erik-osterberg;hovding-gilbert-ekberg-hedin
+sexi-ebba-sjoberg,Ebba Sjöberg,sexi,two_period,,f,I25,,sexi-miriam-herulf;hovding-hanna-widlund;sexi-alice-blomberg
+hovding-gaspard-berglund,Gaspard Berglund,hovding,two_period,,m,I25,,sexi-carl-almtun;sexi-maximilian-von-gross;hovding-elis-ramberg
+normal-albin-zymberi,Albin Zymberi,normal,one_period,1,m,I22,normal,
+normal-olga-martin-lof,Olga Martin-Löf,normal,two_period,,f,I25,normal,normal-sofia-wallin;normal-lisa-anderson;normal-clara-ruud
+sexi-jacob-hertze-hansson,Jacob Hertze Hansson,sexi,one_period,1,m,I24,,sexi-gustav-hellqvist;sexi-sigrid-hornemann-larsen;sexi-simon-wernersson
+normal-carl-nygren,Carl Nygren,normal,one_period,1,m,I24,normal,sexi-alex-dennerhed;normal-david-serenius
+normal-herman-linde,Herman Linde,normal,two_period,,m,I25,normal,hovding-wilmer-ahnfelt;normal-carl-anton-oien;hovding-isaac-kilefors
+sexi-ellen-jahn,Ellen Jahn,sexi,two_period,,f,I25,,normal-ella-eiemarker;sexi-maria-karlsson
+normal-truls-hambraeus,Truls Hambraeus,normal,one_period,2,m,I25,normal,hovding-gaspard-berglund;sexi-maximilian-von-gross
+normal-harald-magnusson,Harald Magnusson,normal,two_period,,m,I25,normal,normal-simon-svenmar;sexi-emil-wetterhall;sexi-hampus-fagerli
+sexi-sandra-gisslin,Sandra Gisslin,sexi,two_period,,f,I25,,normal-hilma-sjolander
+normal-fredrika-grubeck,Fredrika Grubeck,normal,one_period,1,f,I24,normal,sexi-lina-fabiansson;normal-elina-appenrodt
+normal-sofia-wallin,Sofia Wallin,normal,two_period,,f,I25,normal,normal-olga-martin-lof
+sexi-alex-dennerhed,Alex Dennerhed,sexi,one_period,1,m,I24,,normal-arvid-gustafsson;normal-carl-nygren
+normal-david-serenius,David Serenius,normal,one_period,1,m,I24,normal,normal-carl-nygren;normal-arvid-gustafsson;normal-tom-carlander
+normal-simon-svenmar,Simon Svenmar,normal,two_period,,m,I25,normal,normal-harald-magnusson;sexi-hampus-fagerli;sexi-emil-wetterhall
+sexi-lina-fabiansson,Lina Fabiansson,sexi,one_period,1,f,I24,,normal-fredrika-grubeck
+normal-hannes-wiebols,Hannes Wiebols,normal,one_period,2,m,I25,normal,normal-martin-pettersson;normal-hugo-westholm;normal-vidar-pihlsgard
+normal-jacob-shishoo,Jacob Shishoo,normal,two_period,,m,I25,normal,normal-jakob-sundstrom;hovding-gaspard-berglund;hovding-oskar-andersson
+normal-filip-schalin,Filip Schalin,normal,one_period,1,m,I25,normal,normal-anton-wolf;normal-linus-willemo;normal-benjamin-lindborg
+normal-victor-lannerhjelm,Victor Lannerhjelm,normal,two_period,,m,I25,normal,hovding-august-bergstrom;normal-truls-hambraeus
+normal-arvid-gustafsson,Arvid Gustafsson,normal,one_period,1,m,I24,normal,normal-ludvig-freiding-wellberg
+normal-lisa-anderson,Lisa Anderson +,normal,two_period,,f,I25,normal,normal-clara-ruud;normal-fanny-lundqvist;normal-ana-corluka
+normal-tilde-anyuru,Tilde Anyuru,normal,one_period,1,f,I25,normal,normal-amanda-back;sexi-sandra-gisslin
+normal-vera-dahlborg,Vera Dahlborg,normal,two_period,,f,I25,normal,hovding-hanna-widlund;normal-clara-ruud
+normal-amanda-back,Amanda Bäck,normal,one_period,1,f,I25,normal,normal-tilde-anyuru;normal-astrid-enerback;normal-ana-garcia-andersson
+normal-harald-liden-ulvskog,Harald Lidén Ulvskog,normal,two_period,,m,I25,event,normal-oscar-kjellman;normal-joel-ljungqvist;normal-anton-andreasson
+normal-ana-garcia-andersson,Ana Garcia Andersson,normal,one_period,1,f,I25,normal,normal-amanda-back;normal-astrid-enerback
+normal-paula-landen,Paula Landén,normal,two_period,,f,I25,normal,normal-alexandra-persson;normal-irma-krook;normal-ella-eiemarker
+normal-leonardo-capretti-kremer,Leonardo Capretti Kremer,normal,one_period,1,m,I24,normal,
+normal-love-hallonsten,Love Hallonsten,normal,two_period,,m,I25,normal,normal-martin-araskog;hovding-emile-sodergren;hovding-elliot-kopper
+normal-joel-ljungqvist,Joel Ljungqvist,normal,one_period,1,m,I25,normal,normal-hampus-hedensjo;normal-oscar-kjellman;normal-anton-andreasson
+normal-emelie-wollin-ekberg,Emelie Wollin Ekberg,normal,two_period,,f,I25,normal,sexi-rebecca-svahn
+normal-tilde-timlon,Tilde Timlon,normal,one_period,1,f,I24,normal,normal-marta-marklinder;normal-fredrika-grubeck
+normal-fanny-hansson,Fanny Hansson,normal,two_period,,f,I25,normal,normal-ella-moe;normal-emelie-wollin-ekberg
+normal-elle-hoveman,Elle Hoveman,normal,one_period,1,f,I25,normal,normal-hilma-sjolander;sexi-sandra-gisslin
+normal-clara-ruud,Clara Ruud,normal,two_period,,f,I25,normal,normal-lisa-anderson;normal-vera-dahlborg
+normal-fred-linner,Fred Linnér,normal,one_period,1,m,I24,normal,normal-simon-svenmar
+normal-vilgot-lundgren,Vilgot Lundgren,normal,two_period,,m,I25,normal,normal-simon-lindqvist
+normal-simon-lundegren,Simon Lundegren,normal,one_period,1,m,I24,normal,normal-sonia-mannheimer;normal-jonna-angel;normal-ludvig-freiding-wellberg
+normal-emrik-gruden,Emrik Grudén,normal,two_period,,m,I25,event,
+normal-vidar-pihlsgard,Vidar Pihlsgård,normal,one_period,2,m,I25,normal,normal-axel-runow-magnusson;normal-linus-willemo
+normal-andreas-tatidis,Andreas Tatidis,normal,two_period,,m,I25,normal,hovding-isaac-kilefors;normal-david-bernvetter
+normal-petter-froidh,Petter Fröidh,normal,one_period,1,m,I24,normal,
+normal-anton-andreasson,Anton Andreasson,normal,two_period,,m,I25,normal,normal-hampus-hedensjo;normal-oscar-kjellman;normal-joel-ljungqvist
+normal-ludvig-freiding-wellberg,Ludvig Freiding Wellberg,normal,one_period,1,m,I24,normal,normal-arvid-gustafsson
+normal-olle-lundin,Olle Lundin,normal,two_period,,m,I25,normal,normal-simon-svenmar;normal-harald-magnusson;normal-carl-nygren
+normal-ebba-wahlin-jansson,Ebba Wahlin Jansson,normal,one_period,1,f,I24,international,normal-julia-nilsson
+normal-anton-johansson,Anton Johansson,normal,two_period,,m,I24,normal,
+normal-jesper-walberg,Jesper Walberg,normal,two_period,,m,I25,normal,normal-harald-magnusson;normal-simon-svenmar
+normal-ella-moe,Ella Moe,normal,two_period,,f,I25,normal,normal-fanny-hansson;normal-emelie-wollin-ekberg;normal-alice-rask-turesson
+normal-alessandro-cassani,Alessandro Cassani,normal,two_period,,m,unknown,international,normal-allison-spicer;normal-olivera-stupic
+normal-lena-welmans,Lena Welmans,normal,two_period,,f,unknown,international,
+normal-linus-willemo,Linus Willemo ++,normal,two_period,,m,I25,normal,normal-filip-schalin;normal-vidar-pihlsgard;normal-david-bernvetter
+normal-axel-runow-magnusson,Axel Rünow Magnusson,normal,two_period,,m,I25,normal,normal-linus-willemo;normal-vidar-pihlsgard
+normal-alice-rask-turesson,Alice Rask Turesson,normal,two_period,,f,I25,normal,sexi-rebecca-svahn
+normal-sinan-pulavar-ashraf,Sinan Pulavar Ashraf,normal,two_period,,m,unknown,international,
+normal-ingrid-wijkstrom,Ingrid Wijkström,normal,two_period,,f,I25,normal,hovding-linn-lynch;hovding-wilma-bergman
+normal-hampus-hedensjo,Hampus Hedensjö,normal,two_period,,m,I25,normal,normal-oscar-kjellman;normal-joel-ljungqvist
+normal-carl-anton-oien,Carl-Anton Öien +,normal,two_period,,m,I25,normal,normal-herman-linde;hovding-isaac-kilefors
+normal-simon-lindqvist,Simon Lindqvist,normal,two_period,,m,I25,normal,normal-vilgot-lundgren
+normal-alexandra-persson,Alexandra Persson,normal,two_period,,f,I25,normal,normal-paula-landen;sexi-elsa-mauleon-stenudd;normal-clara-ruud
