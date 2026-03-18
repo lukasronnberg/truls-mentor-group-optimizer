@@ -42,13 +42,20 @@ BUNDLE_README = """TRULS Share Bundle
 
 How to run:
 1. Make sure Python 3.11 or newer is installed.
-2. Double-click "Start TRULS.command".
-3. On first launch, the app creates a local virtual environment and installs dependencies.
-4. TRULS then opens in your browser.
+2. If macOS blocks the launcher, right-click "Start TRULS.command" and choose Open.
+3. If macOS still blocks it, go to System Settings -> Privacy & Security and allow it under "Open Anyway".
+4. On first launch, the app creates a local virtual environment and installs dependencies.
+5. TRULS then opens in your browser.
 
 Notes:
 - This bundle includes a prebuilt frontend, so Node.js is not required.
 - Local saved state is stored in the hidden ".truls" folder inside this bundle.
+- This launcher is not Apple code-signed or notarized, so Gatekeeper may warn on first run.
+
+Alternative terminal workaround:
+- Open Terminal
+- Run: xattr -dr com.apple.quarantine "/path/to/TRULS"
+- Then run: "/path/to/TRULS/Start TRULS.command"
 """
 
 
