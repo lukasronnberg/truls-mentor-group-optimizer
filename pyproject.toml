@@ -19,6 +19,7 @@ dependencies = [
 [project.scripts]
 mentor-groups = "backend.app.launcher:main"
 mentor-groups-dev = "backend.app.launcher:main_dev"
+mentor-groups-bundle = "backend.app.distribution:main"
 
 [project.optional-dependencies]
 dev = [

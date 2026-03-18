@@ -221,6 +221,34 @@ source .venv/bin/activate
 mentor-groups-dev
 ```
 
+## Shareable Bundle
+
+Build a shareable folder for friends:
+
+```bash
+cd /Users/lukasronnberg/Documents/Phøs/truls
+source .venv/bin/activate
+mentor-groups-bundle
+```
+
+This creates:
+
+- `release/TRULS/`
+
+That folder includes:
+
+- the backend source
+- a prebuilt frontend
+- synthetic demo data
+- a one-click launcher: `Start TRULS.command`
+
+For friends:
+
+- they only need Python 3.11+
+- they do not need Node.js
+- on first launch, the bundle creates its own local `.venv`
+- saved state stays inside the shared folder under `.truls/`
+
 Or run the backend only:
 
 ```bash

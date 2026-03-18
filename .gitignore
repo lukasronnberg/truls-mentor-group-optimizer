@@ -10,3 +10,4 @@ dist/
 frontend/dist/
 .truls/
 data_raw/
+release/

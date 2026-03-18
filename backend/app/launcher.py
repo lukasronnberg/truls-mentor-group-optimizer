@@ -6,6 +6,7 @@ import threading
 import webbrowser
 import socket
 import os
+import shutil
 from pathlib import Path
 
 import uvicorn
@@ -47,10 +48,18 @@ def sync_converted_bundle_if_needed() -> None:
 def ensure_frontend_ready() -> None:
     if not PACKAGE_JSON.exists():
         return
+    npm_path = shutil.which("npm")
+    if FRONTEND_DIST.exists() and npm_path is None:
+        return
+    if npm_path is None:
+        raise RuntimeError(
+            "Frontend build assets are missing and npm is not installed. "
+            "Use a prebuilt share bundle or install Node.js/npm."
+        )
     if not NODE_MODULES.exists():
-        run_command(["npm", "install"], cwd=FRONTEND_DIR)
+        run_command([npm_path, "install"], cwd=FRONTEND_DIR)
     if needs_frontend_build():
-        run_command(["npm", "run", "build"], cwd=FRONTEND_DIR)
+        run_command([npm_path, "run", "build"], cwd=FRONTEND_DIR)
 
 
 def open_browser_later(url: str) -> None:
