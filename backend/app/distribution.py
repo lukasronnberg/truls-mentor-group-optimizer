@@ -25,6 +25,9 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
+EXPECTED_BUNDLE_VERSION="__TRULS_BUNDLE_VERSION__"
+INSTALLED_VERSION_FILE=".truls-bundle-version"
+
 pick_python() {
   local candidates=(
     /opt/homebrew/bin/python3.14
@@ -69,15 +72,25 @@ if [ -z "$PYTHON_BIN" ]; then
   exit 1
 fi
 
+if [ -x ".venv/bin/python" ]; then
+  if ! ".venv/bin/python" - <<'PY' >/dev/null 2>&1
+import sys
+raise SystemExit(0 if sys.version_info >= (3, 11) else 1)
+PY
+  then
+    rm -rf ".venv"
+  fi
+fi
+
 if [ ! -d ".venv" ]; then
   "$PYTHON_BIN" -m venv .venv
 fi
 
 source .venv/bin/activate
-python -m pip install --upgrade pip
-
-if [ ! -x ".venv/bin/mentor-groups" ]; then
+if [ ! -f "$INSTALLED_VERSION_FILE" ] || [ "$(cat "$INSTALLED_VERSION_FILE")" != "$EXPECTED_BUNDLE_VERSION" ] || [ ! -x ".venv/bin/mentor-groups" ]; then
+  python -m pip install --upgrade pip
   pip install -e .
+  printf '%s' "$EXPECTED_BUNDLE_VERSION" > "$INSTALLED_VERSION_FILE"
 fi
 
 exec .venv/bin/mentor-groups
@@ -94,6 +107,8 @@ RUNTIME_ROOT="$SUPPORT_ROOT/runtime"
 VENV_DIR="$RUNTIME_ROOT/.venv"
 LOG_DIR="$SUPPORT_ROOT/logs"
 LOG_FILE="$LOG_DIR/truls.log"
+EXPECTED_BUNDLE_VERSION="__TRULS_BUNDLE_VERSION__"
+INSTALLED_VERSION_FILE="$RUNTIME_ROOT/installed-bundle-version.txt"
 
 mkdir -p "$RUNTIME_ROOT" "$LOG_DIR"
 
@@ -161,14 +176,14 @@ if [ ! -d "$VENV_DIR" ]; then
 fi
 
 source "$VENV_DIR/bin/activate"
-python -m pip install --upgrade pip >>"$LOG_FILE" 2>&1
-
-if [ ! -f "$RUNTIME_ROOT/source-path.txt" ] || [ "$(cat "$RUNTIME_ROOT/source-path.txt")" != "$APP_SOURCE" ]; then
+if [ ! -f "$RUNTIME_ROOT/source-path.txt" ] || [ "$(cat "$RUNTIME_ROOT/source-path.txt")" != "$APP_SOURCE" ] || [ ! -f "$INSTALLED_VERSION_FILE" ] || [ "$(cat "$INSTALLED_VERSION_FILE")" != "$EXPECTED_BUNDLE_VERSION" ]; then
+  python -m pip install --upgrade pip >>"$LOG_FILE" 2>&1
   if ! pip install -e "$APP_SOURCE" >>"$LOG_FILE" 2>&1; then
     show_error "TRULS could not finish setup. Open $LOG_FILE for details."
     exit 1
   fi
   printf '%s' "$APP_SOURCE" > "$RUNTIME_ROOT/source-path.txt"
+  printf '%s' "$EXPECTED_BUNDLE_VERSION" > "$INSTALLED_VERSION_FILE"
 fi
 
 export TRULS_WORKSPACE_DIR="$SUPPORT_ROOT/workspace"
@@ -274,6 +289,29 @@ def _write_file(path: Path, content: str, executable: bool = False) -> None:
         path.chmod(0o755)
 
 
+def _bundle_version() -> str:
+    try:
+        completed = subprocess.run(
+            ["git", "rev-parse", "--short", "HEAD"],
+            cwd=ROOT,
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        value = completed.stdout.strip()
+        if value:
+            return value
+    except Exception:
+        pass
+    watched = [ROOT / "pyproject.toml", ROOT / "backend" / "app" / "distribution.py"]
+    latest_mtime = max(path.stat().st_mtime for path in watched if path.exists())
+    return str(int(latest_mtime))
+
+
+def _render_launcher(template: str, bundle_version: str) -> str:
+    return template.replace("__TRULS_BUNDLE_VERSION__", bundle_version)
+
+
 def _populate_source_tree(destination_root: Path) -> None:
     _copy_tree(ROOT / "backend", destination_root / "backend")
     _copy_tree(ROOT / "examples", destination_root / "examples")
@@ -287,19 +325,21 @@ def _populate_source_tree(destination_root: Path) -> None:
 
 def build_share_bundle() -> Path:
     _build_frontend()
+    bundle_version = _bundle_version()
 
     if BUNDLE_DIR.exists():
         shutil.rmtree(BUNDLE_DIR)
     BUNDLE_DIR.mkdir(parents=True, exist_ok=True)
 
     _populate_source_tree(BUNDLE_DIR)
-    _write_file(BUNDLE_DIR / "Start TRULS.command", BUNDLE_LAUNCHER, executable=True)
+    _write_file(BUNDLE_DIR / "Start TRULS.command", _render_launcher(BUNDLE_LAUNCHER, bundle_version), executable=True)
     _write_file(BUNDLE_DIR / "RUN FIRST.txt", BUNDLE_README)
     return BUNDLE_DIR
 
 
 def build_macos_app() -> Path:
     bundle_dir = build_share_bundle()
+    bundle_version = _bundle_version()
 
     if APP_DIR.exists():
         shutil.rmtree(APP_DIR)
@@ -309,7 +349,7 @@ def build_macos_app() -> Path:
 
     _populate_source_tree(APP_SOURCE_DIR)
     _write_file(APP_CONTENTS_DIR / "Info.plist", APP_INFO_PLIST)
-    _write_file(APP_MACOS_DIR / "TRULS", APP_LAUNCHER, executable=True)
+    _write_file(APP_MACOS_DIR / "TRULS", _render_launcher(APP_LAUNCHER, bundle_version), executable=True)
     if APP_ICON_PATH.exists():
         shutil.copy2(APP_ICON_PATH, APP_RESOURCES_DIR / "TRULS.icns")
 

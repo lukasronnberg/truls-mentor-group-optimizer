@@ -63,7 +63,7 @@ const WEIGHT_GROUPS: Array<{
       {
         key: "preferred_period_miss",
         label: "Rätt period för enperiodsmentorer",
-        help: "Höj om periodönskemål ska vägas tyngre för mentors who only participate one period."
+        help: "Höj om periodönskemål ska vägas tyngre för mentorer som bara deltar i en period."
       },
       {
         key: "repeated_groupmates",

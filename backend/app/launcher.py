@@ -7,6 +7,8 @@ import webbrowser
 import socket
 import os
 import shutil
+import time
+import urllib.request
 from pathlib import Path
 
 import uvicorn
@@ -69,6 +71,27 @@ def open_browser_later(url: str) -> None:
     threading.Timer(1.0, _open).start()
 
 
+def open_browser_when_ready(
+    url: str,
+    ready_url: str,
+    timeout_seconds: float = 20.0,
+    poll_interval_seconds: float = 0.25,
+) -> None:
+    def _wait_and_open() -> None:
+        deadline = time.monotonic() + timeout_seconds
+        while time.monotonic() < deadline:
+            try:
+                with urllib.request.urlopen(ready_url, timeout=1.0) as response:
+                    if 200 <= response.status < 500:
+                        webbrowser.open(url)
+                        return
+            except Exception:
+                time.sleep(poll_interval_seconds)
+        webbrowser.open(url)
+
+    threading.Thread(target=_wait_and_open, daemon=True).start()
+
+
 def find_available_port(preferred: int = 8000, attempts: int = 20) -> int:
     for port in range(preferred, preferred + attempts):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
@@ -95,8 +118,11 @@ def main_dev() -> None:
     sync_converted_bundle_if_needed()
     if not PACKAGE_JSON.exists():
         raise FileNotFoundError(f"Missing frontend package manifest: {PACKAGE_JSON}")
+    npm_path = shutil.which("npm")
+    if npm_path is None:
+        raise RuntimeError("npm is required for mentor-groups-dev. Install Node.js/npm first.")
     if not NODE_MODULES.exists():
-        run_command(["npm", "install"], cwd=FRONTEND_DIR)
+        run_command([npm_path, "install"], cwd=FRONTEND_DIR)
 
     api_port = find_available_port(8000)
     frontend_port = find_available_port(5173)
@@ -120,7 +146,7 @@ def main_dev() -> None:
     try:
         frontend_process = subprocess.Popen(
             [
-                "npm",
+                npm_path,
                 "run",
                 "dev",
                 "--",
@@ -137,7 +163,7 @@ def main_dev() -> None:
             f"Starting Mentor Group Optimizer dev mode at {url} "
             f"(API: http://127.0.0.1:{api_port})"
         )
-        open_browser_later(url)
+        open_browser_when_ready(url, f"http://127.0.0.1:{frontend_port}")
         frontend_process.wait()
     except KeyboardInterrupt:
         pass
@@ -152,7 +178,7 @@ def main() -> None:
     port = find_available_port()
     url = f"http://127.0.0.1:{port}"
     print(f"Starting Mentor Group Optimizer at {url}")
-    open_browser_later(url)
+    open_browser_when_ready(url, f"http://127.0.0.1:{port}/api/health")
     uvicorn.run("backend.app.main:app", host="127.0.0.1", port=port, reload=False)
 
 
