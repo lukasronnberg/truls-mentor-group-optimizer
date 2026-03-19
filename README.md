@@ -221,7 +221,7 @@ source .venv/bin/activate
 mentor-groups-dev
 ```
 
-## Shareable Bundle
+## Shareable Bundle / macOS App
 
 Build a shareable folder for friends:
 
@@ -234,20 +234,29 @@ mentor-groups-bundle
 This creates:
 
 - `release/TRULS/`
+- `release/TRULS.app`
+- `release/TRULS-macOS.zip`
 
-That folder includes:
+Recommended sharing format on Mac:
 
-- the backend source
+- send `release/TRULS-macOS.zip`
+
+What is included:
+
+- a proper macOS `.app` bundle
 - a prebuilt frontend
 - synthetic demo data
-- a one-click launcher: `Start TRULS.command`
+- a fallback folder bundle with `Start TRULS.command`
 
 For friends:
 
 - they only need Python 3.11+
 - they do not need Node.js
-- on first launch, the bundle creates its own local `.venv`
-- saved state stays inside the shared folder under `.truls/`
+- on first launch, TRULS creates its own local runtime environment
+- saved state lives under `~/Library/Application Support/TRULS`
+- because the app is unsigned, first launch should be:
+  - right-click `TRULS.app`
+  - choose `Open`
 
 Or run the backend only:
 

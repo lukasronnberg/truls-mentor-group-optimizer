@@ -8,6 +8,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[2]
 RELEASE_DIR = ROOT / "release"
 BUNDLE_DIR = RELEASE_DIR / "TRULS"
+APP_DIR = RELEASE_DIR / "TRULS.app"
+APP_CONTENTS_DIR = APP_DIR / "Contents"
+APP_RESOURCES_DIR = APP_CONTENTS_DIR / "Resources"
+APP_MACOS_DIR = APP_CONTENTS_DIR / "MacOS"
+APP_SOURCE_DIR = APP_RESOURCES_DIR / "truls-source"
+ZIP_PATH = RELEASE_DIR / "TRULS-macOS.zip"
 FRONTEND_DIR = ROOT / "frontend"
 FRONTEND_DIST = FRONTEND_DIR / "dist"
 
@@ -38,24 +44,96 @@ exec .venv/bin/mentor-groups
 """
 
 
+APP_LAUNCHER = """#!/bin/zsh
+set -euo pipefail
+
+APP_CONTENTS="$(cd "$(dirname "$0")/.." && pwd)"
+APP_SOURCE="$APP_CONTENTS/Resources/truls-source"
+SUPPORT_ROOT="$HOME/Library/Application Support/TRULS"
+RUNTIME_ROOT="$SUPPORT_ROOT/runtime"
+VENV_DIR="$RUNTIME_ROOT/.venv"
+LOG_DIR="$SUPPORT_ROOT/logs"
+LOG_FILE="$LOG_DIR/truls.log"
+
+mkdir -p "$RUNTIME_ROOT" "$LOG_DIR"
+
+if ! command -v python3 >/dev/null 2>&1; then
+  osascript -e 'display dialog "TRULS requires Python 3.11 or newer. Install Python and try again." buttons {"OK"} default button "OK" with icon caution'
+  exit 1
+fi
+
+if [ ! -d "$VENV_DIR" ]; then
+  python3 -m venv "$VENV_DIR"
+fi
+
+source "$VENV_DIR/bin/activate"
+python -m pip install --upgrade pip >>"$LOG_FILE" 2>&1
+
+if [ ! -f "$RUNTIME_ROOT/source-path.txt" ] || [ "$(cat "$RUNTIME_ROOT/source-path.txt")" != "$APP_SOURCE" ]; then
+  pip install -e "$APP_SOURCE" >>"$LOG_FILE" 2>&1
+  printf '%s' "$APP_SOURCE" > "$RUNTIME_ROOT/source-path.txt"
+fi
+
+export TRULS_WORKSPACE_DIR="$SUPPORT_ROOT/workspace"
+exec "$VENV_DIR/bin/python" -m backend.app.launcher >>"$LOG_FILE" 2>&1
+"""
+
+
+APP_INFO_PLIST = """<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>en</string>
+  <key>CFBundleDisplayName</key>
+  <string>TRULS</string>
+  <key>CFBundleExecutable</key>
+  <string>TRULS</string>
+  <key>CFBundleIdentifier</key>
+  <string>com.lukasronnberg.truls</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>6.0</string>
+  <key>CFBundleName</key>
+  <string>TRULS</string>
+  <key>CFBundlePackageType</key>
+  <string>APPL</string>
+  <key>CFBundleShortVersionString</key>
+  <string>0.1.0</string>
+  <key>CFBundleVersion</key>
+  <string>1</string>
+  <key>LSMinimumSystemVersion</key>
+  <string>12.0</string>
+  <key>NSHighResolutionCapable</key>
+  <true/>
+</dict>
+</plist>
+"""
+
+
 BUNDLE_README = """TRULS Share Bundle
 
-How to run:
-1. Make sure Python 3.11 or newer is installed.
-2. If macOS blocks the launcher, right-click "Start TRULS.command" and choose Open.
-3. If macOS still blocks it, go to System Settings -> Privacy & Security and allow it under "Open Anyway".
-4. On first launch, the app creates a local virtual environment and installs dependencies.
-5. TRULS then opens in your browser.
+Included outputs:
+- TRULS.app
+- TRULS-macOS.zip
+- TRULS folder bundle with Start TRULS.command
 
-Notes:
-- This bundle includes a prebuilt frontend, so Node.js is not required.
-- Local saved state is stored in the hidden ".truls" folder inside this bundle.
-- This launcher is not Apple code-signed or notarized, so Gatekeeper may warn on first run.
+Recommended option:
+1. Send TRULS-macOS.zip to your friend.
+2. They unzip it.
+3. They move TRULS.app wherever they want.
+4. On first run, right-click the app and choose Open.
 
-Alternative terminal workaround:
-- Open Terminal
-- Run: xattr -dr com.apple.quarantine "/path/to/TRULS"
-- Then run: "/path/to/TRULS/Start TRULS.command"
+Why right-click Open:
+- This app is not Apple code-signed or notarized.
+- Gatekeeper may block a normal double-click on first launch.
+
+Runtime behavior:
+- The app keeps its runtime files under ~/Library/Application Support/TRULS
+- The app creates its own Python virtual environment there
+- Node.js is not required because the frontend is already prebuilt
+
+If Python is missing:
+- Install Python 3.11 or newer, then launch TRULS again
 """
 
 
@@ -78,42 +156,74 @@ def _copy_tree(source: Path, destination: Path) -> None:
             ".venv",
             ".truls",
             "data_raw",
+            "release",
             "*.egg-info",
         ),
     )
 
 
-def build_share_bundle() -> Path:
+def _build_frontend() -> None:
     if not shutil.which("npm"):
-        raise RuntimeError("npm is required to build the share bundle.")
-
+        raise RuntimeError("npm is required to build the macOS share bundle.")
     _run(["npm", "run", "build"], cwd=FRONTEND_DIR)
+
+
+def _write_file(path: Path, content: str, executable: bool = False) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+    if executable:
+        path.chmod(0o755)
+
+
+def _populate_source_tree(destination_root: Path) -> None:
+    _copy_tree(ROOT / "backend", destination_root / "backend")
+    _copy_tree(ROOT / "examples", destination_root / "examples")
+    shutil.copy2(ROOT / "README.md", destination_root / "README.md")
+    shutil.copy2(ROOT / "LICENSE", destination_root / "LICENSE")
+    shutil.copy2(ROOT / "pyproject.toml", destination_root / "pyproject.toml")
+    (destination_root / "frontend").mkdir(parents=True, exist_ok=True)
+    shutil.copytree(FRONTEND_DIST, destination_root / "frontend" / "dist")
+    (destination_root / ".gitignore").write_text(".venv/\n.truls/\n__pycache__/\n.DS_Store\n", encoding="utf-8")
+
+
+def build_share_bundle() -> Path:
+    _build_frontend()
 
     if BUNDLE_DIR.exists():
         shutil.rmtree(BUNDLE_DIR)
     BUNDLE_DIR.mkdir(parents=True, exist_ok=True)
 
-    _copy_tree(ROOT / "backend", BUNDLE_DIR / "backend")
-    _copy_tree(ROOT / "examples", BUNDLE_DIR / "examples")
-
-    (BUNDLE_DIR / "frontend").mkdir(parents=True, exist_ok=True)
-    shutil.copytree(FRONTEND_DIST, BUNDLE_DIR / "frontend" / "dist")
-
-    for filename in ("README.md", "LICENSE", "pyproject.toml"):
-        shutil.copy2(ROOT / filename, BUNDLE_DIR / filename)
-
-    (BUNDLE_DIR / ".gitignore").write_text(".venv/\n.truls/\n__pycache__/\n.DS_Store\n", encoding="utf-8")
-    launcher_path = BUNDLE_DIR / "Start TRULS.command"
-    launcher_path.write_text(BUNDLE_LAUNCHER, encoding="utf-8")
-    launcher_path.chmod(0o755)
-    (BUNDLE_DIR / "RUN FIRST.txt").write_text(BUNDLE_README, encoding="utf-8")
-
+    _populate_source_tree(BUNDLE_DIR)
+    _write_file(BUNDLE_DIR / "Start TRULS.command", BUNDLE_LAUNCHER, executable=True)
+    _write_file(BUNDLE_DIR / "RUN FIRST.txt", BUNDLE_README)
     return BUNDLE_DIR
 
 
+def build_macos_app() -> Path:
+    bundle_dir = build_share_bundle()
+
+    if APP_DIR.exists():
+        shutil.rmtree(APP_DIR)
+
+    APP_MACOS_DIR.mkdir(parents=True, exist_ok=True)
+    APP_RESOURCES_DIR.mkdir(parents=True, exist_ok=True)
+
+    _populate_source_tree(APP_SOURCE_DIR)
+    _write_file(APP_CONTENTS_DIR / "Info.plist", APP_INFO_PLIST)
+    _write_file(APP_MACOS_DIR / "TRULS", APP_LAUNCHER, executable=True)
+
+    if ZIP_PATH.exists():
+        ZIP_PATH.unlink()
+    _run(["ditto", "-c", "-k", "--keepParent", str(APP_DIR), str(ZIP_PATH)], cwd=RELEASE_DIR)
+
+    _write_file(RELEASE_DIR / "RUN FIRST.txt", BUNDLE_README)
+    return APP_DIR
+
+
 def main() -> None:
-    bundle_path = build_share_bundle()
-    print(f"Built shareable TRULS bundle at {bundle_path}")
+    app_path = build_macos_app()
+    print(f"Built TRULS app bundle at {app_path}")
+    print(f"Built zipped app at {ZIP_PATH}")
 
 
 if __name__ == "__main__":

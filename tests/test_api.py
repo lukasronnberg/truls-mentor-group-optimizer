@@ -33,8 +33,7 @@ def test_api_health_validate_and_solve():
 
 
 def test_api_workspace_round_trip(tmp_path, monkeypatch):
-    monkeypatch.setattr(workspace_store, "WORKSPACE_DIR", tmp_path)
-    monkeypatch.setattr(workspace_store, "WORKSPACE_FILE", tmp_path / "workspace.json")
+    monkeypatch.setenv("TRULS_WORKSPACE_DIR", str(tmp_path))
     initial = client.get("/api/workspace")
     assert initial.status_code == 200
     payload = initial.json()
@@ -48,7 +47,7 @@ def test_api_workspace_round_trip(tmp_path, monkeypatch):
     save_response = client.post("/api/workspace", json=updated)
     assert save_response.status_code == 200
     assert save_response.json()["scenario"]["settings"]["groups_per_period"] == 2
-    assert Path(workspace_store.WORKSPACE_FILE).exists()
+    assert Path(workspace_store.get_workspace_file()).exists()
 
 
 def test_api_example_endpoint_returns_scenario():
