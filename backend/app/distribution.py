@@ -23,14 +23,52 @@ set -euo pipefail
 
 cd "$(dirname "$0")"
 
-if ! command -v python3 >/dev/null 2>&1; then
-  echo "Python 3 is required to run TRULS."
-  echo "Install Python 3.11+ and try again."
+pick_python() {
+  local candidates=(
+    /opt/homebrew/bin/python3.14
+    /opt/homebrew/bin/python3.13
+    /opt/homebrew/bin/python3.12
+    /opt/homebrew/bin/python3.11
+    /opt/homebrew/bin/python3
+    /usr/local/bin/python3.14
+    /usr/local/bin/python3.13
+    /usr/local/bin/python3.12
+    /usr/local/bin/python3.11
+    /usr/local/bin/python3
+    python3.14
+    python3.13
+    python3.12
+    python3.11
+    python3
+  )
+  for candidate in "${candidates[@]}"; do
+    if [ ! -x "$candidate" ] && ! command -v "$candidate" >/dev/null 2>&1; then
+      continue
+    fi
+    local resolved="$candidate"
+    if [ ! -x "$resolved" ]; then
+      resolved="$(command -v "$candidate")"
+    fi
+    if "$resolved" - <<'PY' >/dev/null 2>&1
+import sys
+raise SystemExit(0 if sys.version_info >= (3, 11) else 1)
+PY
+    then
+      echo "$resolved"
+      return 0
+    fi
+  done
+  return 1
+}
+
+PYTHON_BIN="$(pick_python || true)"
+if [ -z "$PYTHON_BIN" ]; then
+  echo "TRULS requires Python 3.11 or newer."
   exit 1
 fi
 
 if [ ! -d ".venv" ]; then
-  python3 -m venv .venv
+  "$PYTHON_BIN" -m venv .venv
 fi
 
 source .venv/bin/activate
@@ -57,20 +95,77 @@ LOG_FILE="$LOG_DIR/truls.log"
 
 mkdir -p "$RUNTIME_ROOT" "$LOG_DIR"
 
-if ! command -v python3 >/dev/null 2>&1; then
-  osascript -e 'display dialog "TRULS requires Python 3.11 or newer. Install Python and try again." buttons {"OK"} default button "OK" with icon caution'
+pick_python() {
+  local candidates=(
+    /opt/homebrew/bin/python3.14
+    /opt/homebrew/bin/python3.13
+    /opt/homebrew/bin/python3.12
+    /opt/homebrew/bin/python3.11
+    /opt/homebrew/bin/python3
+    /usr/local/bin/python3.14
+    /usr/local/bin/python3.13
+    /usr/local/bin/python3.12
+    /usr/local/bin/python3.11
+    /usr/local/bin/python3
+    python3.14
+    python3.13
+    python3.12
+    python3.11
+    python3
+  )
+  for candidate in "${candidates[@]}"; do
+    if [ ! -x "$candidate" ] && ! command -v "$candidate" >/dev/null 2>&1; then
+      continue
+    fi
+    local resolved="$candidate"
+    if [ ! -x "$resolved" ]; then
+      resolved="$(command -v "$candidate")"
+    fi
+    if "$resolved" - <<'PY' >/dev/null 2>&1
+import sys
+raise SystemExit(0 if sys.version_info >= (3, 11) else 1)
+PY
+    then
+      echo "$resolved"
+      return 0
+    fi
+  done
+  return 1
+}
+
+show_error() {
+  local message="$1"
+  osascript -e "display dialog \"$message\" buttons {\"OK\"} default button \"OK\" with icon caution"
+}
+
+PYTHON_BIN="$(pick_python || true)"
+if [ -z "$PYTHON_BIN" ]; then
+  show_error "TRULS requires Python 3.11 or newer. Install Python and try again."
   exit 1
 fi
 
+if [ -x "$VENV_DIR/bin/python" ]; then
+  if ! "$VENV_DIR/bin/python" - <<'PY' >/dev/null 2>&1
+import sys
+raise SystemExit(0 if sys.version_info >= (3, 11) else 1)
+PY
+  then
+    rm -rf "$VENV_DIR"
+  fi
+fi
+
 if [ ! -d "$VENV_DIR" ]; then
-  python3 -m venv "$VENV_DIR"
+  "$PYTHON_BIN" -m venv "$VENV_DIR"
 fi
 
 source "$VENV_DIR/bin/activate"
 python -m pip install --upgrade pip >>"$LOG_FILE" 2>&1
 
 if [ ! -f "$RUNTIME_ROOT/source-path.txt" ] || [ "$(cat "$RUNTIME_ROOT/source-path.txt")" != "$APP_SOURCE" ]; then
-  pip install -e "$APP_SOURCE" >>"$LOG_FILE" 2>&1
+  if ! pip install -e "$APP_SOURCE" >>"$LOG_FILE" 2>&1; then
+    show_error "TRULS could not finish setup. Open $LOG_FILE for details."
+    exit 1
+  fi
   printf '%s' "$APP_SOURCE" > "$RUNTIME_ROOT/source-path.txt"
 fi
 
