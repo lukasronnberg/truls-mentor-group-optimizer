@@ -24,6 +24,7 @@ mentor-groups-bundle = "backend.app.distribution:main"
 [project.optional-dependencies]
 dev = [
   "httpx>=0.27,<1.0",
+  "Pillow>=10,<12",
   "pytest>=8.0,<9.0",
 ]
 

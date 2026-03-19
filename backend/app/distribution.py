@@ -16,6 +16,8 @@ APP_SOURCE_DIR = APP_RESOURCES_DIR / "truls-source"
 ZIP_PATH = RELEASE_DIR / "TRULS-macOS.zip"
 FRONTEND_DIR = ROOT / "frontend"
 FRONTEND_DIST = FRONTEND_DIR / "dist"
+ASSETS_DIR = ROOT / "assets"
+APP_ICON_PATH = ASSETS_DIR / "TRULS.icns"
 
 
 BUNDLE_LAUNCHER = """#!/bin/zsh
@@ -186,6 +188,8 @@ APP_INFO_PLIST = """<?xml version="1.0" encoding="UTF-8"?>
   <string>TRULS</string>
   <key>CFBundleIdentifier</key>
   <string>com.lukasronnberg.truls</string>
+  <key>CFBundleIconFile</key>
+  <string>TRULS.icns</string>
   <key>CFBundleInfoDictionaryVersion</key>
   <string>6.0</string>
   <key>CFBundleName</key>
@@ -306,6 +310,8 @@ def build_macos_app() -> Path:
     _populate_source_tree(APP_SOURCE_DIR)
     _write_file(APP_CONTENTS_DIR / "Info.plist", APP_INFO_PLIST)
     _write_file(APP_MACOS_DIR / "TRULS", APP_LAUNCHER, executable=True)
+    if APP_ICON_PATH.exists():
+        shutil.copy2(APP_ICON_PATH, APP_RESOURCES_DIR / "TRULS.icns")
 
     if ZIP_PATH.exists():
         ZIP_PATH.unlink()
